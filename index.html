@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+    <title>dCoder-One Place for all Coders</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://ih1.redbubble.net/image.404809762.3957/st,small,845x845-pad,1000x1000,f8f8f8.u2.jpg">
+</head>
+
+<body>
+
+    <!-- This is for Modal popper -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">dCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Languages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/html-tutorials/">HTML</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/css-tutorials/">CSS</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://getbootstrap.com/">Bootstrap</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/js/DEFAULT.asp">JavaScript</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="http://mef-lab.com/osnove-2016/C-Programming-Ebook.pdf">C</a></li>
+                            <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/c-plus-plus/">C++</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.geeksforgeeks.org/python-programming-language/">Python</a></li>
+                            <li><a class="dropdown-item" href="https://www.javatpoint.com/java-tutorial">Java</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Updates</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Interview
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item"
+                                    href="https://whimsical.com/dbms-roadmap-by-love-babbar-FmUi8ffVop33t3MmpVxPCo">DBMS</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://whimsical.com/operating-system-cheatsheet-by-love-babbar-S9tuWBCSQfzoBRF5EDNinQ">OS</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.geeksforgeeks.org/last-minute-notes-computer-network/">Networking</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://whimsical.com/codeforces-candidate-master-roadmap-by-love-babbar-CiXPPD3CnwoXPr2d8Ajx1h">DSA</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://docs.google.com/spreadsheets/d/1HpcFdmJALVazf3nH0pDe8moaLwwdcMzwVqMtUD0Nf9o/edit#gid=0">Competitive</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                        data-bs-target="#searchModal">Search</button>
+                </form>
+                &nbsp;
+                <button type="button" class="btn btn-outline-danger" data-toggle="modal"
+                    data-target="#loginModal">Login</button>
+                &nbsp;
+                <button class="btn btn-outline-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+            </div>
+        </div>
+
+        <!-- Login Modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login to dCoder</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3 row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control-plaintext" id="staticEmail" value=""
+                                    placeholder="example@gmail.com">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Type here">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#searchModal">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SignUp Modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Get an Account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3 row">
+                            <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputName" placeholder="Enter Your Name">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control-plaintext" id="staticEmail" value=""
+                                    placeholder="Enter Your Email">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword"
+                                    placeholder="Enter Your Password">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Confirm</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword"
+                                    placeholder="Confirm Password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#searchModal" >SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Guest Modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="guestModal" tabindex="-1" role="dialog" aria-labelledby="guestModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="guestModalLabel">Enter as Guest</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Welcome to dCoder
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Sign Up</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Search Modal -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="searchModalLabel">Oops...</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Under Maintainance.... <br>
+                        Sorry for inconvenience caused :(
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.emailaudience.com/wp-content/uploads/High-converting-landingpages-1400x500.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: black;">Welcome to dCoder</h5>
+                    <p style="color: rgb(0, 0, 0)">The best place to prepare yourself for Placements</p>
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#guestModal">Guest</button>
+                    <button type="button" class="btn btn-success" data-toggle="modal"
+                        data-target="#loginModal">Login</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://alscotoday.com/go/templates/uploads/main/Slides/banner-security-1-1400x500.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hands on Coding with various Languages</h5>
+                    <p>Learn hode to code in Python, HTML, CSS, JS and many more</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://hazelcast.com/wp-content/uploads/2019/10/Banner_UC_1400x500_app-scaling-1400x500.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cheatsheets available for CS subjects</h5>
+                    <p>Best notes of DBMS, OS, Networking and all....</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+    <div class="container my-4">
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="card">
+                    <img src="https://academind.com/static/e15f39448cfb2ba77c895d2a81c6b66c/c5c54/beginner's-guide.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></h5>
+                        <p class="card-text">Hypertext Markup Language is the standard markup language for documents
+                            designed to be displayed in a web browser.</p>
+                        <a href="https://en.wikipedia.org/wiki/HTML" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="card">
+                    <img src="https://academind.com/static/79ae6cab2f1790275f9767c16bb6c6f3/c5c54/understanding-css.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/CSS">CSS</a></h5>
+                        <p class="card-text">Cascading Style Sheets (CSS) is a style sheet language used for describing
+                            the presentation of a document written in a markup language such as HTML.</p>
+                        <a href="https://en.wikipedia.org/wiki/CSS" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="card">
+                    <img src="https://i2.wp.com/constructs.stampede-design.com/wp-content/uploads/2016/05/a.jpg?fit=1200%2C675&ssl=1&resize=350%2C200"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a></h5>
+                        <p class="card-text">JavaScript, often abbreviated as JS, is a programming language that
+                            conforms to the ECMAScript specification.</p>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container my-4">
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="card">
+                    <img src="https://i1.wp.com/blog.henrypoon.com/wp-content/uploads/2010/01/cpp.jpg?fit=1200%2C675&ssl=1&resize=350%2C200"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a></h5>
+                        <p class="card-text">C++ is a general-purpose programming language created by Bjarne Stroustrup
+                            as an extension of the C programming language.</p>
+                        <a href="https://en.wikipedia.org/wiki/C%2B%2B" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="card">
+                    <img src="https://i1.wp.com/codemeals.com/wp-content/uploads/2019/11/Python-programming-for-hackers-compressed.jpg?resize=350%2C200&ssl=1"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a
+                                href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a></h5>
+                        <p class="card-text">Python is an interpreted, high-level and general-purpose programming
+                            language.</p>
+                        <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"
+                            class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="card">
+                    <img src="https://i0.wp.com/evtechnologies.com/wp-content/uploads/2017/12/Java400x200.jpg?fit=400%2C200&ssl=1&resize=350%2C200"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a
+                                href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a></h5>
+                        <p class="card-text"> The language was initially called Oak after an oak tree that stood outside
+                            Gosling's office.</p>
+                        <a href="https://en.wikipedia.org/wiki/Java_(programming_language)"
+                            class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">© 2020–2021 dCoder, The Soumyadeep Company</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+        </footer>
+    </div>
+
+
+    <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert">
+        <strong>Under Maintainance!!!</strong> You should check in after some days or contact Soumyadeep.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+
+</body>
+
+</html>
